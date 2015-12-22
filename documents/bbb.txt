@@ -1,0 +1,27 @@
+Yocto compilation for beaglebone black
+
+mkdir bbb
+git clone -b dizzy git://git.yoctoproject.org/poky.git 
+
+cd poky
+source oe-init-build-env build
+
+vi conf/local.conf
+uncomment beaglebonebitbake core-image-minimal
+
+2. Path of yocto distro version
+	vi meta-yocto/conf/distro/poky.conf 
+
+3. Path of machine
+	vi meta-yocto-bsp/conf/machine/beaglebone.conf
+
+4. Path of bblayers.conf
+	vi build/conf/bblayers.conf
+5. Path of .config
+	build/tmp/work/beaglebone-poky-linux-gnueabi/linux-yocto/3.14.29+gitAUTOINC+6eddbf4787_dbe5b52e93-r0/linux-beaglebone-standard-build/.config
+
+TOPDIR=/home/vipul/vipul/bbb/build
+COREBASE=/home/vipul/vipul/bbb/poky
+
+6. machine include
+	meta-ti/conf/machine/include/ti33x.inc

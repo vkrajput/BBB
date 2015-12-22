@@ -1,0 +1,25 @@
+for u-boot
+u-boot-fslc.inc
+
+for kernel 
+linux-imx.inc
+
+configuration is saved in /home/vipul/vipul/bbb/poky/build/tmp/work/beaglebone-poky-linux-gnueabi/linux-yocto/3.14-r0/linux-beaglebone-standard-build/.config
+
+GIT COMMIT
+
+Login on github.com
+***************************************************To commit new fresh code ****************************
+Top Upper Right
+
+click on create new
+
+git clone https://github.com/vkrajput/<new>
+
+cp all code into git clone directory.
+
+git add -A
+
+git commit -m "<message>"
+
+git push origin master
